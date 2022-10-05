@@ -77,6 +77,6 @@ int main(int argc, char const *argv[])
 	qFunction();
 	vFunction(30);
 	sFunction();
-
+		
 	return 0;
 }
