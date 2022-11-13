@@ -13,15 +13,15 @@ class smart_ptr
 	private:
 
 		/////////////////////////////////////////////////////
-		///		 The template pointer points to an        ///
-		///		 argument in the class constructor        ///
+		//        The template pointer points to an       ///
+		///       argument in the class constructor       ///
 		/////////////////////////////////////////////////////
 		PTR* ptr;
 	public:
 
 		/////////////////////////////////////////////////////
-		///		  The class constructor has an 			  ///
-		///		  argument to the template pointer        ///
+		///         The class constructor has an 	  ///
+		///         argument to the template pointer      ///
 		/////////////////////////////////////////////////////
 
 		smart_ptr(PTR* ptr)
@@ -31,19 +31,18 @@ class smart_ptr
 			//TEMPLATE PTR//
 			////////////////
 		}
-
 		////////////////////////////////////////////////////////
-		///	the class destructor does not contain arguments. ///
-		/// the pointer is deleted in it and to clear the 	 ///
+		/// the class destructor does not contain arguments. ///
+		/// the pointer is deleted in it and to clear the    ///
 		/// memory, we assign null ptr to it so that it      ///
-		///         does not contain garbage.		         ///
+		///            does not contain garbage.             ///
 		////////////////////////////////////////////////////////
 		
 		~smart_ptr()
 		{
 			delete ptr;
 						   //////////////////////////////////////////////////////////
-			ptr = nullptr; ///AVAILABLE: NULL, but nullptr is special for pointers///
+			ptr = nullptr; 	           ///AVAILABLE: NULL, but nullptr is special for pointers///
 						   //////////////////////////////////////////////////////////
 			cout << "*** DYNAMIC MEMORY FREE SUCCESSFULLY ***";
 			
