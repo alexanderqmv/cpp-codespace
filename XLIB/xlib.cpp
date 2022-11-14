@@ -81,7 +81,7 @@ class sort_t {
 		///////////////////////////////////////////////////////////////////////
 		///                   *** SORTING ALGORITHM ***                     ///
 		///////////////////////////////////////////////////////////////////////
-		/*						     BUBBLE SORT						     */
+		/*						     BUBBLE SORT     */
 		///////////////////////////////////////////////////////////////////////
 		/// By means of a nested loop (a loop within a loop), we iterate    ///
 		/// through all the elements and compare, if one number is greater  ///
@@ -105,7 +105,7 @@ class sort_t {
 
 
 		/////////////////////////////////////////////////
-		///           	CLASS CONSTRUCTOR        	  ///
+		///           	CLASS CONSTRUCTOR             ///
 		/////////////////////////////////////////////////
 		/////////////////////////////////////////////////
 		///As an argument for the constructor, we pass///
@@ -154,7 +154,7 @@ class smart_ptr
 
 //////////////////////////////////////////
 ///           METHOD:~PRINT_T          ///
-///	    Prints the elements of array   ///
+///	 Prints the elements of array  ///
 ///          Two arguments taken       ///
 //////////////////////////////////////////
 template<typename T>
