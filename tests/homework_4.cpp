@@ -41,5 +41,7 @@ int main()
     }
     cout << endl;
     cout << "[ < "<< max << " > ::  max number in array ]";
+    
+    cout << endl;
     return 0;
 }
