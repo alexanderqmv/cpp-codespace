@@ -2,7 +2,7 @@
 #include <ctime>
 using namespace std;
 
-
+enum { SIZE = 10 };
 
 void fillArr(int* arr, const int &size)
 {
@@ -35,8 +35,7 @@ void fillArr(int* arr, const int &size)
 }
 
 int main() 
-{
-    const int size = 10;
+{ 
     int arr[size];
 
     fillArr(arr,size);
