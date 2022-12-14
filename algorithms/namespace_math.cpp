@@ -2,7 +2,7 @@
 
 using namespace std;
 
-namespace math
+inline namespace math
 {
     int pow(int n, int p)
     {
@@ -15,7 +15,7 @@ namespace math
     }
 }
 
-namespace math
+inline namespace math
 {
     template<typename T>
     void sort(T arr[], size_t size)
@@ -37,7 +37,7 @@ namespace math
     }
 }
 
-namespace math
+inline namespace math
 {
     template<typename T>
     void print(T  arr[], size_t  size)
@@ -49,7 +49,7 @@ namespace math
     }
 }
 
-namespace math
+inline namespace math
 {
     template<typename T>
     void search(T arr[], size_t size , T key)
@@ -64,7 +64,7 @@ namespace math
     }
 }
 
-namespace math
+inline namespace math
 {
 
     int int_binsearch(int arr[], int l, int r, int x)
@@ -103,7 +103,7 @@ int main(int argc, const char *argv[])
     std::cout << std::endl << n << std::endl;
     std::cout << std::endl;
     std:cout << math::int_binsearch(arr,0, n - 1, 4098);
-    
-    math::linear_search(arr, 5, 10);
+
+
     return 0;
 }
