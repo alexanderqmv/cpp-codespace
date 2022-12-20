@@ -44,7 +44,8 @@ namespace pr
         public:
             
             pair() = default;
-            pair(const string &a, const int b) : first(a), second(b) { }
+            pair(const string &a, const int b) 
+            : first(a), second(b) { }
 
             void print_pair_object()
             {
