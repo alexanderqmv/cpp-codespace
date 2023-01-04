@@ -2,9 +2,8 @@
 
 #ifndef LIB_H
 #define LIB_H
+ 
 
- 
- 
 namespace lib 
 {
 	template<class T>
@@ -33,12 +32,7 @@ namespace lib
 			}
 		}
 
-		~vector()
-		{
-			delete[] _data;
-			_data = nullptr;
- 
-		}
+		~vector() { delete[] _data; _data = nullptr; }
 
 		// Copy-Constructor
 		vector(const vector& other)
@@ -70,24 +64,10 @@ namespace lib
 		}
 
 
-		void resize(size_t _n)
-		{
-			if (_n > _capacity)
-			{
-				reserve(_n);
-			}
-			_size = _n;
-		}
-
-		void pop_back()
-		{
-			if (_size > 0)
-			{
-				--_size;
-			}
-
-		}
-
+		void resize(size_t _n) { if (_n > _capacity) { reserve(_n); } _size = _n; }
+		 
+		void pop_back() { if (_size > 0) { --_size; } }
+		 
 		vector& operator=(const vector& other)
 		{
 			if (this != &other)
@@ -118,13 +98,9 @@ namespace lib
 			return *this;
 		}
 
-		T& operator[](T index)
-		{
-			return _data[index];
-		}
-
-		size_t size()	  { return _size; }
-		size_t capacity() { return _capacity; }
+		T& operator[](T index)		   { return _data[index]; }
+		size_t size()				   { return _size; }
+		size_t capacity()			   { return _capacity; }
 		bool empty() { if (_size != 0) { return false; }/* else-> */ return true; }
 	
 		/*LEFT TO DO*/
@@ -132,8 +108,6 @@ namespace lib
 		// push_fron()
 	};
 }
-
-
 namespace lib
 {
 	struct node
@@ -142,25 +116,20 @@ namespace lib
 		node* left;
 		node* right;
 	};
-
 	node* createNode(int Data)
 	{
 		node* newNode 	 =	new node;
 		newNode->data    =	Data;
 		newNode->left    =  nullptr;
 		newNode->right   =  nullptr;
-
 		return newNode;
-
 	}
 
 	void nodefree(node* _node)
 	{
 		if (_node == nullptr) return;
-
 		nodefree(_node->left);
 		nodefree(_node->right);
-
 		delete _node;
 	}
 
