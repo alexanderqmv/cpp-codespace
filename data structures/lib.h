@@ -9,7 +9,7 @@ namespace lib
 	template<class T>
 	class vector
 	{
-		T*		  _data;
+		T*        _data;
 		size_t    _size;
 		size_t    _capacity;
 	public:  
