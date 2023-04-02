@@ -8,7 +8,7 @@
 #include <algorithm>
 #include <cassert>
  
-
+// disable compiler warnings (strcpy_s)
 #pragma warning(disable:4996)
 
 
@@ -48,9 +48,10 @@ namespace ustd
 			str_ = new char[size_ + 1];
 			std::strcpy(str_, str);
 		}
-		~string() { delete[] str_; }
-
-		string(const string& other) noexcept
+		~string() { if (str_ != nullptr){
+         delete[] str_; 
+       } }
+  string(const string& other) noexcept
 		{
 			// can i add here check : if (this != &other)
 			size_ = other.size_;
