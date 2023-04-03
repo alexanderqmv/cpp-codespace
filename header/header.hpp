@@ -27,7 +27,7 @@ typedef except __OWNSTR_EXCEPT;
 
  
 
-namespace ustd
+namespace spd
 {
 	class string
 	{
