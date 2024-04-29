@@ -17,8 +17,8 @@ int main()
         for (j = i - 1; j >= 0 and a[j] > buff; j--)
         
             a[j + 1] = a[j];
-            a[j + 1] = buff;     
     }
+           a[j + 1] = buff;     
 
  
     for (int i = 0; i < N; ++i)
